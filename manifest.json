@@ -1,0 +1,22 @@
+{
+  "name": "Striker Manager School Helper",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Striker Manager Tactics manager",
+  "content_scripts": [
+    {
+      "matches" : ["http://*.strikermanager.com/escuelas.php"],
+      "all_frames" : true,
+      "include_globs" : ["http://en*.strikermanager.com*"],
+      "js":["jquery-1.8.3.min.js","school.js"]
+    }
+  ],
+  "permissions": [
+    "http://en3.strikermanager.com/",
+    "http://en2.strikermanager.com/",
+    "http://en1.strikermanager.com/",
+    "http://en.strikermanager.com/",
+    "storage",
+    "tabs"
+  ]
+}
