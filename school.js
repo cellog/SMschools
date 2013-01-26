@@ -1,5 +1,4 @@
 (function(){
- document.getElementsByClassName("{sorter: 'numeric'} header sortasc")[0].firstElementChild.innerHTML = 'Next juv.';
  var schools = document.body.innerHTML.match(/escuelas_paises\.php\?[^"]+/g);
  for (var i = 0; i < schools.length; i++) {
   var school = schools[i];
@@ -35,4 +34,5 @@
    });
   })();
  }
+ document.getElementsByTagName('th')[5].firstElementChild.innerHTML = 'Next juv.';
 })();
